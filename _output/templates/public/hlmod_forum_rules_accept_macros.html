@@ -2,7 +2,8 @@
 		  arg-rowType="">
 	<xf:if is="$forum.hlmod_rules_url is not empty">
 		<xf:checkboxrow rowtype="{$rowType}">
-			<xf:option data-xf-init="disabler" data-container="{$container}" data-controls="{$controls}">
+			<xf:option name="hlmod_rules_url_accept" value="{$forum.hlmod_rules_url}"
+					   data-xf-init="disabler" data-container="{$container}" data-controls="{$controls}">
 				{{ phrase('hlmod_forum_rules_accept.i_read_and_accept_forum_rules', {'url': $forum.hlmod_rules_url}) }}
 			</xf:option>
 		</xf:checkboxrow>

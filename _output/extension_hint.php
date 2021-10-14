@@ -7,3 +7,8 @@ namespace HLModerators\ForumRulesAccept\XF\Admin\Controller
 {
 	class XFCP_Forum extends \XF\Admin\Controller\Forum {}
 }
+
+namespace HLModerators\ForumRulesAccept\XF\Pub\Controller
+{
+	class XFCP_Forum extends \XF\Pub\Controller\Forum {}
+}

@@ -16,5 +16,11 @@
         "version_id": 1000011,
         "version_string": "1.0.0 Alpha 1",
         "hash": "bbee0d653e71dd07760ae09aa5575d25"
+    },
+    "hlmod_forum_rules_accept.you_must_accept_rules.txt": {
+        "global_cache": false,
+        "version_id": 1000170,
+        "version_string": "1.0.1",
+        "hash": "d78b151c7217bd689d2cdbafdcaee797"
     }
 }
