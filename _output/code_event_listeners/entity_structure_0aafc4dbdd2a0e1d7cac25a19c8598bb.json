@@ -1,0 +1,9 @@
+{
+    "event_id": "entity_structure",
+    "execute_order": 25,
+    "callback_class": "HLModerators\\ForumRulesAccept\\EventListener",
+    "callback_method": "onForumEntityStructure",
+    "active": true,
+    "hint": "XF\\Entity\\Forum",
+    "description": "Extends the forum entity structure"
+}
