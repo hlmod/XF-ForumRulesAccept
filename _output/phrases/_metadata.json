@@ -7,9 +7,9 @@
     },
     "hlmod_forum_rules_accept.i_read_and_accept_forum_rules.txt": {
         "global_cache": false,
-        "version_id": 1000011,
-        "version_string": "1.0.0 Alpha 1",
-        "hash": "03aee01a8d127da68e18fb63462bdaa7"
+        "version_id": 1000070,
+        "version_string": "1.0.0",
+        "hash": "1fc744408fd958b5a6edd91defb01a06"
     },
     "hlmod_forum_rules_accept.label.txt": {
         "global_cache": false,
