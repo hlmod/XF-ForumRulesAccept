@@ -1,0 +1,19 @@
+{
+    "legacy_addon_id": "",
+    "title": "[HLModerators] Node Rules Accept",
+    "description": "Adds a checkbox \"I read and accept rules\" in thread creation interface",
+    "version_id": 1000010,
+    "version_string": "1.0.0 Alpha",
+    "dev": "HLModerators",
+    "dev_url": "https://hlmod.ru/?utm_source=xenforo_acp&utm_campaign=node_rules_accept",
+    "faq_url": "",
+    "support_url": "",
+    "extra_urls": [],
+    "require": {
+        "XF": [
+            2020010,
+            "XenForo 2.2.0+"
+        ]
+    },
+    "icon": "fas fa-check-circle"
+}
