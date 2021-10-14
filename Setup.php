@@ -25,7 +25,17 @@ class Setup extends AbstractSetup
     {
         $this->alterTable('xf_forum', function (Alter $table)
         {
-            $table->addColumn('hlmod_rules_url', 'varchar', 255);
+            $table->addColumn('hlmod_rules_url', 'varchar', 255)
+                ->setDefault('');
+        });
+    }
+
+    public function upgrade1000011Step1()
+    {
+        $this->alterTable('xf_forum', function (Alter $table)
+        {
+            $table->changeColumn('hlmod_rules_url')
+                ->setDefault('');
         });
     }
 
