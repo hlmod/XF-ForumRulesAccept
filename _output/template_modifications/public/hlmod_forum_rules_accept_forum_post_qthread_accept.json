@@ -1,0 +1,9 @@
+{
+    "template": "forum_post_quick_thread",
+    "description": "Adds the row for accepting forum rules",
+    "execution_order": 25,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:captcharow label=\"{{ phrase('verification') }}\" rowtype=\"fullWidth noGutter noLabel\" />",
+    "replace": "$0\n\n<xf:macro template=\"hlmod_forum_rules_accept_macros\" name=\"accept_rules\"\n\t\t  arg-forum=\"{$forum}\" arg-rowType=\"fullWidth noGutter noLabel\"\n\t\t  arg-container=\".formButtonGroup-primary\"\n\t\t  arg-controls=\"button[type=submit]:not([name=more-options])\" />"
+}

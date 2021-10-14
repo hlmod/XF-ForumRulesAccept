@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "<xf:captcharow label=\"{{ phrase('verification') }}\" />",
-    "replace": "$0\n<xf:if is=\"$forum.hlmod_rules_url is not empty\">\n\t<xf:checkboxrow>\n\t\t<xf:option data-xf-init=\"disabler\" data-container=\".formSubmitRow\">\n\t\t\t{{ phrase('hlmod_forum_rules_accept.i_read_and_accept_forum_rules', {'url': $forum.hlmod_rules_url}) }}\n\t\t</xf:option>\n\t</xf:checkboxrow>\n</xf:if>"
+    "replace": "$0\n\n<xf:macro template=\"hlmod_forum_rules_accept_macros\" name=\"accept_rules\"\n\t\t  arg-forum=\"{$forum}\" />"
 }
