@@ -1,0 +1,14 @@
+{
+    "hlmod_forum_rules_accept.explain.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "418b96b333e785d747ede338392dcd33"
+    },
+    "hlmod_forum_rules_accept.label.txt": {
+        "global_cache": false,
+        "version_id": 1000011,
+        "version_string": "1.0.0 Alpha 1",
+        "hash": "bbee0d653e71dd07760ae09aa5575d25"
+    }
+}

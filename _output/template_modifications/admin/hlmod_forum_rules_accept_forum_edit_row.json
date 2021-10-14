@@ -1,0 +1,9 @@
+{
+    "template": "forum_edit",
+    "description": "Adds the row for setting rules URL",
+    "execution_order": 25,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:radiorow name=\"allow_index\" value=\"{$forum.allow_index}\"",
+    "replace": "<xf:textboxrow name=\"hlmod_rules_url\" value=\"{$forum.hlmod_rules_url}\"\n\t\t\t   label=\"{{ phrase('hlmod_forum_rules_accept.label') }}\"\n\t\t\t   explain=\"{{ phrase('hlmod_forum_rules_accept.explain') }}\" />\n\n$0"
+}

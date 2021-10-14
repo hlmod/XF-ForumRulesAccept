@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\Admin\\Controller\\Forum",
+    "to_class": "HLModerators\\ForumRulesAccept\\XF\\Admin\\Controller\\Forum",
+    "execute_order": 25,
+    "active": true
+}
