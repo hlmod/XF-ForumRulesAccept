@@ -1,11 +1,17 @@
 {
     "admin/hlmod_forum_rules_accept_forum_edit_row.json": {
-        "hash": "a54324f77cab384754110160be865fbf"
+        "hash": "061184c69f86460698593f74d2d410bb"
+    },
+    "admin/hlmod_forum_rules_accept_xfrm_category_edit_row.json": {
+        "hash": "3b58baba466d7ca353f1ce34e5370404"
     },
     "public/hlmod_forum_rules_accept_forum_post_qthread_accept.json": {
         "hash": "25468dd593c7f83f6cd3e001c9bcf089"
     },
     "public/hlmod_forum_rules_accept_forum_post_thread_accept.json": {
         "hash": "2ef277dd547d19b581d810d7c367bf0e"
+    },
+    "public/hlmod_forum_rules_accept_xfrm_add_resource_accept.json": {
+        "hash": "257febefef41f7b6eac6dde9a80a69eb"
     }
 }

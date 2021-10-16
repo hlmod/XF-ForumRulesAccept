@@ -1,2 +1,2 @@
-If this URL is set, then user should accept rules before every thread creation in this forum. <br />
-<b>Note</b>: this option does not apply to subforums.
+If this URL is set, then user should accept rules before every content creation in this node. <br />
+<b>Note</b>: this option does not apply to children nodes.

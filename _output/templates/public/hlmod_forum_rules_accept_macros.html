@@ -9,3 +9,9 @@
 		</xf:checkboxrow>
 	</xf:if>
 </xf:macro>
+
+<xf:macro name="option_row" arg-forum="!">
+	<xf:textboxrow name="hlmod_rules_url" value="{$forum.hlmod_rules_url}"
+				   label="{{ phrase('hlmod_forum_rules_accept.label') }}"
+				   explain="{{ phrase('hlmod_forum_rules_accept.explain') }}" />
+</xf:macro>

@@ -1,0 +1,9 @@
+{
+    "template": "xfrm_category_add_resource",
+    "description": "Adds the row for accepting category rules",
+    "execution_order": 25,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:submitrow icon=\"save\" sticky=\"true\" />",
+    "replace": "<div class=\"block-body\">\n\t<xf:macro template=\"hlmod_forum_rules_accept_macros\" name=\"accept_rules\"\n\t\t\t  arg-forum=\"{$category}\" />\n</div>\n\n$0"
+}

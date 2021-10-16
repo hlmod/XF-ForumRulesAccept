@@ -1,0 +1,6 @@
+{
+    "from_class": "XFRM\\Pub\\Controller\\Category",
+    "to_class": "HLModerators\\ForumRulesAccept\\XFRM\\Pub\\Controller\\Category",
+    "execute_order": 25,
+    "active": true
+}

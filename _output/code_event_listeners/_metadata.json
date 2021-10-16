@@ -1,5 +1,8 @@
 {
-    "entity_structure_0aafc4dbdd2a0e1d7cac25a19c8598bb.json": {
-        "hash": "9e6d77c98287490e82170fd208eb49e7"
+    "addon_post_install_8ee79074ea27c92ea8b088fda7b15e8a.json": {
+        "hash": "834cce9c3decfe74533e38e0c0aca806"
+    },
+    "entity_structure_60416710f20a783e44a318ae7c6e8ccf.json": {
+        "hash": "d8f51f40311eb09ff0f4bf7cc16e1240"
     }
 }

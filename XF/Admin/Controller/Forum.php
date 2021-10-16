@@ -18,8 +18,7 @@ class Forum extends XFCP_Forum
     {
         parent::saveTypeData($form, $node, $data);
 
-        $form->setupEntityInput($data, [
-            'hlmod_rules_url' => $this->filter('hlmod_rules_url', 'str')
-        ]);
+        $this->plugin('HLModerators\ForumRulesAccept:SubforumRules')
+            ->setupSaveUrl($form, $data);
     }
 }

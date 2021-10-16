@@ -1,0 +1,9 @@
+{
+    "event_id": "addon_post_install",
+    "execute_order": 25,
+    "callback_class": "HLModerators\\ForumRulesAccept\\EventListener",
+    "callback_method": "onAddOnInstall",
+    "active": true,
+    "hint": "",
+    "description": "Listens the add-on installs for creating tables where this is required"
+}

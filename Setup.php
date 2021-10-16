@@ -21,16 +21,30 @@ class Setup extends AbstractSetup
     use StepRunnerUpgradeTrait;
     use StepRunnerUninstallTrait;
 
-    public function installStep1()
+    const TABLES = ['xf_forum', 'xf_rm_category'];
+
+    #region Install steps
+
+    /**
+     * Adds the columns to required tables (if exists).
+     */
+    public function installStep1(): void
     {
-        $this->alterTable('xf_forum', function (Alter $table)
+        foreach (self::TABLES as $tableName)
         {
-            $table->addColumn('hlmod_rules_url', 'varchar', 255)
-                ->setDefault('');
-        });
+            $this->addRulesColumn($tableName);
+        }
     }
 
-    public function upgrade1000011Step1()
+    #endregion
+
+    #region Upgrade steps
+
+    /**
+     * Sets the default column value for correct working if add-on is
+     * disabled.
+     */
+    public function upgrade1000011Step1(): void
     {
         $this->alterTable('xf_forum', function (Alter $table)
         {
@@ -39,9 +53,63 @@ class Setup extends AbstractSetup
         });
     }
 
-    public function uninstallStep1()
+    /**
+     * Adds the column to XFRM table (if exists).
+     */
+    public function upgrade1000210Step1(): void
     {
-        $this->alterTable('xf_forum', function (Alter $table)
+        $this->addRulesColumn('xf_rm_category');
+    }
+
+    #endregion
+
+    #region Uninstall steps
+
+    /**
+     * Drops the column from all tables.
+     */
+    public function uninstallStep1(): void
+    {
+        foreach (self::TABLES as $tableName)
+        {
+            $this->dropRulesColumn($tableName);
+        }
+    }
+
+    #endregion
+
+    /**
+     * Adds the column for rules URL saving in specified table.
+     *
+     * @param string $tableName
+     */
+    public function addRulesColumn(string $tableName): void
+    {
+        if (!$this->tableExists($tableName))
+        {
+            return;
+        }
+
+        $this->alterTable($tableName, function (Alter $table)
+        {
+            $table->addColumn('hlmod_rules_url', 'varchar', 255)
+                ->setDefault('');
+        });
+    }
+
+    /**
+     * Drops the column for rules URL saving in specified table.
+     *
+     * @param string $tableName
+     */
+    public function dropRulesColumn(string $tableName): void
+    {
+        if (!$this->tableExists($tableName))
+        {
+            return;
+        }
+
+        $this->alterTable($tableName, function (Alter $table)
         {
             $table->dropColumns(['hlmod_rules_url']);
         });

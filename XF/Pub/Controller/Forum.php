@@ -14,15 +14,18 @@ use XF\Mvc\ParameterBag;
 
 class Forum extends XFCP_Forum
 {
-    protected function setupThreadCreate(\XF\Entity\Forum $forum)
+    public function actionPostThread(ParameterBag $params)
     {
-        /** @var string $rulesUrl */
-        $rulesUrl = $forum->hlmod_rules_url;
-        if (!empty($rulesUrl) && $rulesUrl !== $this->filter('hlmod_rules_url_accept', 'str,no-trim'))
+        if ($this->isPost())
         {
-            throw $this->errorException(\XF::phrase('hlmod_forum_rules_accept.you_must_accept_rules'), 400);
+            $userId = \XF::visitor()->user_id;
+            $nodeId = $params->node_id ?: $params->node_name;
+            $node = $this->assertViewableForum($nodeId, ['DraftThreads|' . $userId]);
+
+            $this->plugin('HLModerators\ForumRulesAccept:SubforumRules')
+                ->assertRulesIsAccepted($node);
         }
 
-        return parent::setupThreadCreate($forum);
+        return parent::actionPostThread($params);
     }
 }

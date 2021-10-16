@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "<xf:radiorow name=\"allow_index\" value=\"{$forum.allow_index}\"",
-    "replace": "<xf:textboxrow name=\"hlmod_rules_url\" value=\"{$forum.hlmod_rules_url}\"\n\t\t\t   label=\"{{ phrase('hlmod_forum_rules_accept.label') }}\"\n\t\t\t   explain=\"{{ phrase('hlmod_forum_rules_accept.explain') }}\" />\n\n$0"
+    "replace": "<xf:macro template=\"public:hlmod_forum_rules_accept_macros\"\n\t\t  name=\"option_row\" arg-forum=\"{$forum}\" />\n\n$0"
 }

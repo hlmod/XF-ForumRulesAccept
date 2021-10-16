@@ -1,0 +1,9 @@
+{
+    "template": "xfrm_category_edit",
+    "description": "Adds the row for setting rules URL",
+    "execution_order": 25,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<xf:selectrow name=\"thread_node_id\" value=\"{$category.thread_node_id}\" id=\"js-rmThreadNodeList\"",
+    "replace": "<xf:macro template=\"public:hlmod_forum_rules_accept_macros\"\n\t\t  name=\"option_row\" arg-forum=\"{$category}\" />\n\n$0"
+}

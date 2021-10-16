@@ -1,15 +1,15 @@
 {
     "hlmod_forum_rules_accept.explain.txt": {
         "global_cache": false,
-        "version_id": 1000011,
-        "version_string": "1.0.0 Alpha 1",
-        "hash": "418b96b333e785d747ede338392dcd33"
+        "version_id": 1000210,
+        "version_string": "1.0.2 Alpha",
+        "hash": "a7fcf99b7277d97b3f11f61000a76014"
     },
     "hlmod_forum_rules_accept.i_read_and_accept_forum_rules.txt": {
         "global_cache": false,
-        "version_id": 1000070,
-        "version_string": "1.0.0",
-        "hash": "1fc744408fd958b5a6edd91defb01a06"
+        "version_id": 1000210,
+        "version_string": "1.0.2 Alpha",
+        "hash": "05869853848d2da35f667ba16889870f"
     },
     "hlmod_forum_rules_accept.label.txt": {
         "global_cache": false,
@@ -19,8 +19,8 @@
     },
     "hlmod_forum_rules_accept.you_must_accept_rules.txt": {
         "global_cache": false,
-        "version_id": 1000170,
-        "version_string": "1.0.1",
-        "hash": "d78b151c7217bd689d2cdbafdcaee797"
+        "version_id": 1000210,
+        "version_string": "1.0.2 Alpha",
+        "hash": "5de54197c15a1a7bda39cbea30eb0971"
     }
 }

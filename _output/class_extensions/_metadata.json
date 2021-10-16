@@ -4,5 +4,11 @@
     },
     "XF-Pub-Controller-Forum_HLModerators-ForumRulesAccept-XF-Pub-Controller-Forum.json": {
         "hash": "05b5337ac132d7abb87afd8b5d912d2c"
+    },
+    "XFRM-Admin-Controller-Category_HLModerators-ForumRulesAccept-XFRM-Admin-Controller-Category.json": {
+        "hash": "6ac10f36c910897e79d139ed2083cafb"
+    },
+    "XFRM-Pub-Controller-Category_HLModerators-ForumRulesAccept-XFRM-Pub-Controller-Category.json": {
+        "hash": "7503daf99de0a66af420153bf915f677"
     }
 }
